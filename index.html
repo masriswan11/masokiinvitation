@@ -79,11 +79,9 @@
             </h1>
 
             <div class="mb-12" data-aos="fade-up" data-aos-delay="600">
-                <p class="italic mb-2 opacity-80">Special Invite To :</p>
-                <h3
-                    class="text-3xl font-semibold border-b-2 border-yellow-600 pb-2 px-6">Nama
-                    Tamu
-                </h3>
+                <!-- Contoh elemen di index.html -->
+<p>Kepada Bapak/Ibu/Saudara/i:</p>
+<h2 id="nama-tamu">Nama Tamu</h2>
                 <p class="mt-4 text-sm uppercase tracking-widest">DI TEMPAT</p>
             </div>
 
@@ -140,37 +138,6 @@
                     <div
                         class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24 mb-12">
 
-                        <!-- Mempelai Pria -->
-                        <div class="flex flex-col items-center"
-                            data-aos="fade-right" data-aos-duration="1500">
-                            <!-- Frame Foto Minimalis -->
-                            <div class="relative mb-6 group">
-                                <div
-                                    class="absolute -inset-1 bg-gradient-to-tr from-yellow-600 to-yellow-200 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                                <div
-                                    class="relative w-40 h-52 md:w-48 md:h-64 overflow-hidden rounded-2xl border-2 border-yellow-600/50 shadow-2xl bg-stone-800">
-                                    <img src="img/pria.jpeg"
-                                        alt="Riswan Oki Nanda"
-                                        class="w-full h-full object-cover transform hover:scale-110 transition duration-700">
-                                </div>
-                            </div>
-                            <h3
-                                class="text-3xl md:text-5xl font-bold gold-text drop-shadow-md">Riswan
-                                Oki Nanda, S.Kom</h3>
-                            <p
-                                class="text-md text-stone-200 mt-2 font-light">Putra
-                                dari Bpk. Tranmiyanto & Mariyati</p>
-                            <div
-                                class="h-px w-16 bg-yellow-600 mt-4 opacity-50"></div>
-                        </div>
-
-                        <!-- Divider Ornamen Tengah -->
-                        <div class="py-4 md:py-0" data-aos="zoom-in"
-                            data-aos-duration="1000">
-                            <span
-                                class="text-6xl font-serif gold-text opacity-80">&</span>
-                        </div>
-
                         <!-- Mempelai Wanita -->
                         <div class="flex flex-col items-center"
                             data-aos="fade-left" data-aos-duration="1500">
@@ -195,6 +162,39 @@
                             <div
                                 class="h-px w-16 bg-yellow-600 mt-4 opacity-50"></div>
                         </div>
+                        
+
+                        <!-- Divider Ornamen Tengah -->
+                        <div class="py-4 md:py-0" data-aos="zoom-in"
+                            data-aos-duration="1000">
+                            <span
+                                class="text-6xl font-serif gold-text opacity-80">&</span>
+                        </div>
+                        <!-- Mempelai Pria -->
+                        <div class="flex flex-col items-center"
+                            data-aos="fade-right" data-aos-duration="1500">
+                            <!-- Frame Foto Minimalis -->
+                            <div class="relative mb-6 group">
+                                <div
+                                    class="absolute -inset-1 bg-gradient-to-tr from-yellow-600 to-yellow-200 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                                <div
+                                    class="relative w-40 h-52 md:w-48 md:h-64 overflow-hidden rounded-2xl border-2 border-yellow-600/50 shadow-2xl bg-stone-800">
+                                    <img src="img/pria.jpeg"
+                                        alt="Riswan Oki Nanda"
+                                        class="w-full h-full object-cover transform hover:scale-110 transition duration-700">
+                                </div>
+                            </div>
+                            <h3
+                                class="text-3xl md:text-5xl font-bold gold-text drop-shadow-md">Riswan
+                                Oki Nanda, S.Kom</h3>
+                            <p
+                                class="text-md text-stone-200 mt-2 font-light">Putra
+                                dari Bpk. Tranmiyanto & Mariyati</p>
+                            <div
+                                class="h-px w-16 bg-yellow-600 mt-4 opacity-50"></div>
+                        </div>
+
+                        
                     </div>
 
                     <!-- Hitung Mundur -->
@@ -545,7 +545,16 @@
             animation-play-state: paused;
         }
     </style>
+        <script>
+    // Mengambil parameter 'to' dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('to');
 
+    // Jika parameter 'to' ada di URL, ganti teks di id 'nama-tamu'
+    if (nama) {
+        document.getElementById('nama-tamu').innerText = nama.replace(/\+/g, ' ');
+    }
+</script>
         <!-- Scripts -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Tambahkan Script Countdown ini sebelum penutup </body> -->
