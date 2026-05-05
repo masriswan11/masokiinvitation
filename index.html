@@ -65,37 +65,42 @@
 
     <body class="bg-stone-50 overflow-x-hidden">
 
-        <!-- Cover Section (Sticky Full Screen) -->
-        <section id="cover"
-            class="h-screen w-full flex flex-col items-center justify-center text-center text-white hero-bg px-4 sticky top-0 z-50 transition-transform duration-1000 ease-in-out">
-            <p class="text-xl uppercase tracking-[0.3em] mb-4"
-                data-aos="fade-down">Maimbau Baralek</p>
-            
+<!-- Cover Section (Sticky Full Screen) -->
+<section id="cover"
+    class="h-screen w-full flex flex-col items-center justify-between text-center text-white hero-bg px-4 py-16 sticky top-0 z-50 transition-transform duration-1000 ease-in-out">
+    
+    <!-- GRUP ATAS: Judul Utama -->
+    <div class="flex flex-col items-center">
+        <p class="text-xl uppercase tracking-[0.3em] mb-4"
+            data-aos="fade-down">Maimbau Baralek</p>
 
-            <h1
-                class="text-5xl md:text-8xl mb-8 gold-text font-bold drop-shadow-lg"
-                data-aos="zoom-in" style="margin-top:10px;" data-aos-delay="400">
-                Riswan & Yolan
-            </h1>
+        <h1
+            class="text-5xl md:text-8xl gold-text font-bold drop-shadow-lg"
+            data-aos="zoom-in" data-aos-delay="400">
+            Riswan & Yolan
+        </h1>
+    </div>
 
-            <div class="mb-12" data-aos="fade-up" data-aos-delay="600">
-                <!-- Contoh elemen di index.html -->
-<p>Kepada Bapak/Ibu/Saudara/i:</p>
-<h2 id="nama-tamu">Nama Tamu</h2>
-                <p class="mt-4 text-sm uppercase tracking-widest">DI TEMPAT</p>
-            </div>
+    <!-- GRUP BAWAH: Nama Tamu dan Tombol -->
+    <div class="flex flex-col items-center w-full">
+        <div class="mb-8" data-aos="fade-up" data-aos-delay="600">
+            <p class="text-sm italic opacity-90">Kepada Bapak/Ibu/Saudara/i:</p>
+            <h2 id="nama-tamu" class="text-2xl md:text-4xl font-bold mt-2">Nama Tamu</h2>
+            <p class="mt-2 text-xs uppercase tracking-widest opacity-80">DI TEMPAT</p>
+        </div>
 
-            <button onclick="openInvitation()"
-                class="gold-button hover:scale-105 hover:bg-yellow-600 text-white font-bold py-4 px-10 rounded-full flex items-center transition-all shadow-2xl group"
-                data-aos="fade-up" data-aos-delay="800">
-                <svg class="w-5 h-5 mr-3 group-hover:animate-bounce"
-                    fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                        d="M2.003 5.803l7.597 5.117 7.597-5.117a1 1 0 00-1.223-1.58L10 8.165 2.503 3.517a1 1 0 10-1.223 1.58z"></path>
-                </svg>
-                Buka Undangan
-            </button>
-        </section>
+        <button onclick="openInvitation()"
+            class="gold-button hover:scale-105 hover:bg-yellow-600 text-white font-bold py-4 px-10 rounded-full flex items-center transition-all shadow-2xl group"
+            data-aos="fade-up" data-aos-delay="800">
+            <svg class="w-5 h-5 mr-3 group-hover:animate-bounce"
+                fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M2.003 5.803l7.597 5.117 7.597-5.117a1 1 0 00-1.223-1.58L10 8.165 2.503 3.517a1 1 0 10-1.223 1.58z"></path>
+            </svg>
+            Buka Undangan
+        </button>
+    </div>
+</section>
 
         <!-- Main Content -->
         <main id="main-content" class="relative z-10">
